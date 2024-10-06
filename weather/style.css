@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap');
 body {
     font-family: "Urbanist", sans-serif;
     display: flex;
@@ -6,58 +6,102 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: #202020;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
 }
-.card{
-    
-        background:#f2f2f2;
-        color: white;
-        padding: 2em;
-        border-radius: 30px;
-        width: 100%;
-        max-width: 420px;
-        margin: 1em;
-        opacity: 0.8;
-        box-shadow: 0 0 5px;
-        
-    
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
-.search{
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2em;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    color: #333;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+button {
+    border: none;
+    background-color: #4c4cfd;
+    color: white;
+    padding: 0.6em;
+    border-radius: 10px;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+.search-bar {
+    padding: 0.6em;
+    border-radius: 10px;
+    border: 2px solid #303033; /* Add a colored outline */
+    outline: none; /* Remove default outline */
+    width: 75%;
+    font-size: 1rem;
+    background-color: white; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.search-bar:focus {
+    border-color: #66a6ff; /* Change color when focused */
+}
+
+.city {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.weather {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #f2f2f2;
-}
-button{
-    border-radius: 5px;
-    background-color:#303033;
-   margin: 0.5em;
-   cursor: pointer;
-
-}
-.search-bar{
-    border-radius: 8px;
-    background-color: #f2f2f2;
-    color: white;
-    width: 80%;
-    height: 20px;
-
+    justify-content: space-between;
 }
 
-.flex{
-    display:flex;
+.temp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff7979;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.flex {
+    display: flex;
     align-items: center;
 }
 
-
-.icon{
-    mix-blend-mode: multiply;
-    color: #f2f2f2;
+.icon {
+    width: 50px;
+    margin-right: 10px;
 }
 
-.weather{
+.details {
+    margin-top: 1em;
     display: flex;
     justify-content: space-between;
-    color: #202020;
-    font-weight: 600;
+    font-size: 1rem;
+    color: #666;
+}
+
+.humidity, .wind {
+    font-weight: 600;
 }
